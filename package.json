@@ -1,0 +1,24 @@
+{
+   "name": "rendermd",
+   "version": "0.0.1",
+   "description": "Render Markdown in Browser",
+   "author": "Mayank Singhal",
+   "keywords": ["Markdown", "Showdown"],
+   "licenses": [{
+      "type": "MIT",
+      "url": "http://raw.github.com/mayanksinghal/rendermd/master/LICENSE"
+   }],
+   "main": "ShowdownDisplay",
+   "bin": {
+      "rendermd": "./bin/rendermd"
+   },
+   "homepage": "http://brotherboard.com/demoes/rendermd",
+   "repository": {
+      "type": "git",
+      "url": "git://github.com/mayanksinghal/rendermd.git"
+   },
+   "dependencies" : {
+      "showdown": "0.2.x",
+      "open": "0.0.2"
+   }
+}

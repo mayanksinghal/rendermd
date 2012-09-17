@@ -1,4 +1,8 @@
-rendermd
-========
+ShowdownDisplay
+==============
 
-Command line utility that renders a markdown file and shows it in the default browser
+Uses showdown to render a Markdown file and host it on a local server.
+
+Install
+-------
+Add install instructions here.
