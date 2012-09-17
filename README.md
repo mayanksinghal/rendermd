@@ -13,3 +13,6 @@ To see something else rendered:
 
     rendermd some-file-name.md
 
+Installation
+------------
+    npm install rendermd
