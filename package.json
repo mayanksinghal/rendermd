@@ -1,6 +1,6 @@
 {
    "name": "rendermd",
-   "version": "0.0.5",
+   "version": "0.0.6",
    "description": "Render Markdown in Browser",
    "author": "Mayank Singhal",
    "keywords": ["Markdown", "Showdown"],

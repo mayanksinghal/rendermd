@@ -20,7 +20,8 @@ if (typeof mdFilePath === 'undefined') {
 var markdownCssPath = '/node_modules/github-markdown-css/github-markdown.css';
 var css = fs.readFileSync(__dirname + markdownCssPath);
 var generateHtml = function(markdownHtml) {
-  return "<style>" + css + "\n" +
+  return "<meta http-equiv='Content-Type' content='text/html;charset=utf-8'>" +
+      "<style>" + css + "\n" +
       ".markdown-body {\n" +
       "  min-width: 200px;\n" +
       "  max-width: 790px;\n" +
