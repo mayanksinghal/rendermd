@@ -1,4 +1,4 @@
-ShowdownDisplay
+RenderMd - Showdown Display
 ==============
 
 Uses showdown to render a Markdown file and host it on a local server.
