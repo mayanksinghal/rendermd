@@ -8,7 +8,7 @@
       "type": "MIT",
       "url": "http://raw.github.com/mayanksinghal/rendermd/master/LICENSE"
    }],
-   "main": "ShowdownDisplay",
+   "main": "RenderMd - ShowdownDisplay",
    "bin": {
       "rendermd": "./bin/rendermd"
    },
@@ -18,7 +18,7 @@
       "url": "git://github.com/mayanksinghal/rendermd.git"
    },
    "dependencies" : {
-      "showdown": "0.2.x",
+      "showdown": "1.x",
       "open": "0.0.2"
    }
 }

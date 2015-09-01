@@ -20,7 +20,7 @@ fs.readFile(mdFilePath,'utf8', function(err, data) {
    if (err) {
       throw err;
    }
-   html = new showdown.converter().makeHtml(data);
+   html = new showdown.Converter().makeHtml(data);
    server.listen(2122, '127.0.0.1');
    open('http://127.0.0.1:2122/');
 });
