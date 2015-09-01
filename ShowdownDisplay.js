@@ -16,12 +16,29 @@ var server = http.createServer(function (req, res) {
 if (typeof mdFilePath === 'undefined') {
    mdFilePath = __dirname + '/README.md';
 }
+
+var markdownCssPath = '/node_modules/github-markdown-css/github-markdown.css';
+var css = fs.readFileSync(__dirname + markdownCssPath);
+var generateHtml = function(markdownHtml) {
+  return "<style>" + css + "\n" +
+      ".markdown-body {\n" +
+      "  min-width: 200px;\n" +
+      "  max-width: 790px;\n" +
+      "  margin: 0 auto;\n" +
+      "  padding: 30px;\n" +
+      "}\n" +
+      "</style>\n" +
+      "<article class='markdown-body'>\n" +
+      markdownHtml +
+      "</article>";
+};
 fs.readFile(mdFilePath,'utf8', function(err, data) {
-   if (err) {
-      throw err;
-   }
-   html = new showdown.Converter().makeHtml(data);
-   server.listen(2122, '127.0.0.1');
-   open('http://127.0.0.1:2122/');
+  if (err) {
+    throw err;
+  }
+  var markdownHtml = new showdown.Converter().makeHtml(data);
+  html = generateHtml(markdownHtml);
+  server.listen(2122, '127.0.0.1');
+  open('http://127.0.0.1:2122/');
 });
 
