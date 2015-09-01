@@ -15,4 +15,4 @@ To see something else rendered:
 
 Installation
 ------------
-    npm install rendermd
+    npm install -g rendermd
