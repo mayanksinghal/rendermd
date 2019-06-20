@@ -20,6 +20,6 @@
    "dependencies" : {
       "showdown": "1.x",
       "github-markdown-css": "2.0.x",
-      "open":  ">=6.0.0"
+      "open": ">=6.0.0"
    }
 }
